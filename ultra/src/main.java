@@ -14,11 +14,10 @@ public class main {
         lut[5] = new lutador(
                 "Nerdaard", "EUA", 1.81, 105.7, 30, 12, 2, 4);
 
-        lut[0].apresentar();
-        lut[0].status();
-        lut[3].getCategoria();
-        lut[1].ganharLuta();
-        lut[0].empatarLuta();
+        luta UEC01 = new luta();
+        UEC01.marcarLuta(lut[0], lut[1]);
+        UEC01.lutar();
+
 
 
 
