@@ -1,3 +1,4 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class calculadora {
@@ -11,8 +12,14 @@ public class calculadora {
         String gender = s.nextLine();
         System.out.println("Digite o seu peso");
         double peso = s.nextDouble();
+        if(peso>200.0){
+            throw new IllegalArgumentException("Peso inválido");
+        }
         System.out.println("Digite a sua altura");
         double altura = s.nextDouble();
+        if(altura>2.4){
+            throw new IllegalArgumentException("altura inválida");
+        }
 
         Pessoa.setGender(gender);
         Pessoa.setAltura(altura);

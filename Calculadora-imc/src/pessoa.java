@@ -1,6 +1,11 @@
+import java.util.Scanner;
 public class pessoa {
     private double peso, altura;
     private String gender;
+
+    public pessoa() {
+
+    }
 
     public double calcular(double peso, double altura){
         double calculo = peso / (altura * altura);
@@ -8,7 +13,7 @@ public class pessoa {
     }
 
     public double getAltura() {
-        return altura;
+        return this.altura;
     }
 
     public void setAltura(double altura) {
